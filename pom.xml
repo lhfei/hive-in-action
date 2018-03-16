@@ -13,11 +13,11 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>1.8</java.version>
-		<hadoop.version>2.7.1</hadoop.version>
+		<hadoop.version>2.7.3</hadoop.version>
 		<spark.version>1.4.1</spark.version>
 		<slf4j.version>1.7.7</slf4j.version>
 		<kafka.version>0.8.2.2</kafka.version>
-		<hive.version>1.2.1</hive.version>
+		<hive.version>2.1.1</hive.version>
 		<flume.version>1.6.0</flume.version>
 	</properties>
 
@@ -39,8 +39,18 @@
 			<version>${hive.version}</version>
 		</dependency>
 		<dependency>
+			<groupId>org.apache.hive</groupId>
+			<artifactId>hive-jdbc</artifactId>
+			<version>${hive.version}</version>
+		</dependency>
+		<dependency>
 			<groupId>org.apache.hadoop</groupId>
 			<artifactId>hadoop-yarn-server-tests</artifactId>
+			<version>${hadoop.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.hadoop</groupId>
+			<artifactId>hadoop-client</artifactId>
 			<version>${hadoop.version}</version>
 		</dependency>
 	</dependencies>
